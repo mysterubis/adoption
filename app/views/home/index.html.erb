@@ -1,0 +1,53 @@
+<!-- Mini Carrousel -->
+<div class="carousel-container mt-4 mx-auto" style="max-width: 250px;">
+  <div id="animalCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <%= image_tag 'rex.webp', class: 'd-block w-100', alt: 'Rex' %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag 'bella.webp', class: 'd-block w-100', alt: 'Bella' %>
+      </div>
+      <!-- Ajoutez d'autres images ici -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#animalCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#animalCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="jumbotron bg-success text-white mt-4 p-4">
+  <div class="container text-center welcome-bubble">
+    <h1 class="display-4">Bienvenue sur Animaux Cherchent Maison</h1>
+    <p class="lead">Un site dédié à trouver des foyers aimants pour les animaux sans abri.</p>
+    <hr class="my-4">
+    <p>Rejoignez-nous et aidez à faire une différence dans la vie des animaux.</p>
+    <a class="btn btn-light btn-lg me-2" href="<%= home_adopter_path %>" role="button">Adopter</a>
+    <a class="btn btn-light btn-lg" href="<%= home_soutenir_path %>" role="button">Soutenir</a>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <h2>Adopter</h2>
+      <p>Découvrez des animaux adorables qui cherchent un foyer. Adoptez un animal de compagnie aujourd'hui et faites une différence.</p>
+      <%= link_to 'Voir les animaux à adopter', home_adopter_path, class: 'btn btn-success' %>
+    </div>
+    <div class="col-md-4 text-center">
+      <h2>Soutenir</h2>
+      <p>Apprenez comment vous pouvez soutenir notre mission. Devenez bénévole ou faites un don pour aider les animaux dans le besoin.</p>
+      <%= link_to 'En savoir plus', home_soutenir_path, class: 'btn btn-success' %>
+    </div>
+    <div class="col-md-4 text-center">
+      <h2>Contact</h2>
+      <p>Avez-vous des questions ou souhaitez-vous en savoir plus sur notre organisation ? Contactez-nous dès aujourd'hui.</p>
+      <%= link_to 'Nous contacter', home_contact_path, class: 'btn btn-success' %>
+    </div>
+  </div>
+</div>

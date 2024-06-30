@@ -1,0 +1,22 @@
+<!-- app/views/dogs/index.html.erb -->
+<h1 class="text-center text-success my-5">Chiens Disponibles à l'Adoption</h1>
+
+<div class="container">
+  <div class="row">
+    <% @dogs.each do |dog| %>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <%= image_tag(dog.photo, alt: dog.name, class: 'card-img-top') %>
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to dog.name, dog_path(dog) %></h5>
+            <p class="card-text">Âge: <%= dog.age %> ans</p>
+            <p class="card-text">Race: <%= dog.breed %></p>
+            <p class="card-text">Sexe: <%= dog.sex %></p>
+            <p class="card-text">Stérilisé: <%= dog.sterilized ? 'Oui' : 'Non' %></p>
+            <p class="card-text">Remarques: <%= dog.remarks %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4 title-custom text-success">Adopter un Animal</h1>
+  <div class="row">
+    <div class="col-md-4 text-center mb-4">
+      <%= link_to dogs_path do %>
+        <div class="card">
+          <%= image_tag 'dogs.webp', alt: 'Chiens', class: 'card-img-top img-thumbnail mx-auto d-block' %>
+          <div class="card-body">
+            <h5 class="card-title text-success">Chiens</h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+      <%= link_to cats_path do %>
+        <div class="card">
+          <%= image_tag 'cats.webp', alt: 'Chats', class: 'card-img-top img-thumbnail mx-auto d-block' %>
+          <div class="card-body">
+            <h5 class="card-title text-success">Chats</h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+      <%= link_to fishes_path do %>
+        <div class="card">
+          <%= image_tag 'fishes.webp', alt: 'Poissons', class: 'card-img-top img-thumbnail mx-auto d-block' %>
+          <div class="card-body">
+            <h5 class="card-title text-success">Poissons</h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-4 text-center mb-4">
+      <%= link_to reptiles_path do %>
+        <div class="card">
+          <%= image_tag 'reptiles.webp', alt: 'Reptiles', class: 'card-img-top img-thumbnail mx-auto d-block' %>
+          <div class="card-body">
+            <h5 class="card-title text-success">Reptiles</h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+      <%= link_to horses_path do %>
+        <div class="card">
+          <%= image_tag 'horses.webp', alt: 'Chevaux', class: 'card-img-top img-thumbnail mx-auto d-block' %>
+          <div class="card-body">
+            <h5 class="card-title text-success">Chevaux</h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+      <%= link_to birds_path do %>
+        <div class="card">
+          <%= image_tag 'birds.webp', alt: 'Oiseaux', class: 'card-img-top img-thumbnail mx-auto d-block' %>
+          <div class="card-body">
+            <h5 class="card-title text-success">Oiseaux</h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

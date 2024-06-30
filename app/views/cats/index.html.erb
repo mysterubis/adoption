@@ -1,0 +1,22 @@
+<!-- app/views/cats/index.html.erb -->
+<h1 class="text-center text-success my-5">Chats Disponibles à l'Adoption</h1>
+
+<div class="container">
+  <div class="row">
+    <% @cats.each do |cat| %>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <%= image_tag(cat.photo, alt: cat.name, class: 'card-img-top img-thumbnail') %>
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to cat.name, cat_path(cat) %></h5>
+            <p class="card-text">Âge: <%= cat.age %> ans</p>
+            <p class="card-text">Race: <%= cat.breed %></p>
+            <p class="card-text">Sexe: <%= cat.sex %></p>
+            <p class="card-text">Stérilisé: <%= cat.sterilized ? 'Oui' : 'Non' %></p>
+            <p class="card-text">Remarques: <%= cat.remarks %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

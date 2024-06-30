@@ -1,0 +1,129 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('back.webp'); /* Chemin de l'image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bubble {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.text-success-custom {
+  color: #28a745; /* Utilise la couleur verte de Bootstrap */
+}
+
+.title-custom {
+  font-family: 'Poppins', sans-serif; /* Police personnalisée */
+  color: #28a745; /* Couleur verte */
+  font-size: 3rem; /* Taille du texte */
+  text-align: center; /* Centrer le texte */
+  margin-bottom: 30px; /* Marge inférieure */
+}
+
+.img-thumbnail {
+  width: 80px; /* Taille des images ajustée */
+  height: 80px; /* Taille des images ajustée */
+  object-fit: cover; /* Assure que les images couvrent tout l'espace */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.bubble {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.text-success-custom {
+  color: #28a745; /* Utilise la couleur verte de Bootstrap */
+}
+
+.title-custom {
+  font-family: 'Poppins', sans-serif; /* Police personnalisée */
+  color: #28a745; /* Couleur verte */
+  font-size: 3rem; /* Taille du texte */
+  text-align: center; /* Centrer le texte */
+  margin-bottom: 30px; /* Marge inférieure */
+}
+
+.img-thumbnail {
+  width: 80px; /* Taille des images ajustée */
+  height: 80px; /* Taille des images ajustée */
+  object-fit: cover; /* Assure que les images couvrent tout l'espace */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s; /* Animation de transition */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.card h5 {
+  color: #28a745; /* Couleur verte pour les titres des cartes */
+  font-family: 'Poppins', sans-serif; /* Police personnalisée */
+}
+
+.navbar-custom {
+  background-color: #343a40;
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-custom .navbar-toggler {
+  color: #ffffff;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+
+.card-img-top {
+  width: 40%;
+  height: 400px; /* Ajustez la hauteur selon vos besoins */
+  object-fit: cover;
+  object-position: top;40
+}
+
+.no-availability-message {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.carousel-container {
+  max-width: 200px; /* Ajustez cette valeur selon vos besoins */
+  margin: 0 auto; /* Centre le carrousel horizontalement */
+}
+.carousel-item img {
+  width: 100%; /* Assure que les images prennent toute la largeur du carrousel */
+  height: auto; /* Garde le ratio de l'image */
+}
+
+.welcome-bubble {
+  background: rgba(210, 210, 220, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-custom {
+  color: #28a745; /* Adjust this color to match your theme */
+}
